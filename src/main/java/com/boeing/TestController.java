@@ -24,9 +24,10 @@ public class TestController {
 
         //trace a custom trace
         telemetryClient.trackTrace("Sending a custom trace....");
-
+        System.out.println("dsfahsdfhsafdh");
         //track a custom metric
         telemetryClient.trackMetric("custom metric", 1.0);
+        
 
         //track a custom dependency
         telemetryClient.trackDependency("SQL", "Insert", new Duration(0, 0, 1, 1, 1), true);
